@@ -1,5 +1,5 @@
 .BG {
-    background: linear-gradient(150deg, rgba(93, 7, 3, 0.5), black );
+    background: linear-gradient(150deg, rgba(136, 21, 21, 0.733), black)
 }
 
 .hero {
@@ -16,7 +16,7 @@
 }
 
 .hero__up-text {
-    color: #fc703c;
+    color: #331414;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -27,6 +27,7 @@
     font-weight: 500;
     letter-spacing: -0.05em;
     margin-top: 0.75rem;
+    color: #f5f0ee;
 }
 
 .hero__description {
@@ -36,6 +37,7 @@
     line-height: calc(1em + 0.5rem);
     margin-block: 1.5rem;
     max-width: 55ch;
+    color: #f8f2ef;
 }
 
 .hero__btn {
@@ -43,11 +45,33 @@
     background: linear-gradient(to right, #ffa175, #5d0703);
     padding: 0.5em 2em;
     border-radius: 6px;
-    color: black;
 }
 
 /* HERO RIGHT */
 
 .hero__img {
     max-width: 550px;
+}
+
+@media (width < 1024px ) {
+    .hero {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .hero__tittle {
+        max-width: 20ch;
+    }
+
+    .hero__img {
+        width: 90%;
+        max-width: 400px;
+        margin-inline: auto;
+    }
+}
+
+@media (width < 475px ) {
+    .hero__tittle {
+        font-size: 2.5rem;
+    }
 }
